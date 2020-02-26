@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+      <ion-buttons class="btn" slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title class="titlec">Brand and Weight</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+        <ion-row justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+
+            <div padding>
+
+              <ion-item>
+                  <ion-label>Brand</ion-label>
+                  <ion-select [(ngModel)]="brand" placeholder="Select One">
+                    <ion-select-option value="shell">Shell</ion-select-option>
+                    <ion-select-option value="mGas">mGas</ion-select-option>
+                  </ion-select>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Weight</ion-label>
+                  <ion-select [(ngModel)]="weight" placeholder="Select One">
+                    <ion-select-option value="12.5">12.5Kg</ion-select-option>
+                    <ion-select-option value="5">5.0Kg</ion-select-option>
+                    <ion-select-option value="2.3">2.3Kg</ion-select-option>
+                  </ion-select>
+              </ion-item>
+
+              <!-- <p>{{NewAddress}}</p>
+              <p>{{ulat}}</p>
+              <p>{{ulong}}</p> -->
+      
+            </div>
+      
+            <div padding>
+              <ion-button *ngIf ="brand && weight" class="new-background-color" size="medium" (click) = "searchShop()" expand="block">SEARCH</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+</ion-content>

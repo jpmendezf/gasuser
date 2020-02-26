@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar class="new-background-color">
+        <ion-buttons class="btn" slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title class="titlec">Search Result</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <ion-list *ngIf="chkresult == 'nodata'" >
+        <ion-item >
+          <ion-thumbnail item-start>
+            <img src="assets/images/no-result.png">
+          </ion-thumbnail>
+          <h2>No result found.</h2>
+          <p> Try again shortly</p>
+        </ion-item>
+      </ion-list>
+
+    <ion-card >    
+        <ion-card-content  >
+          <ion-card-subtitle>Name: Jon Gas</ion-card-subtitle>
+          <p>Mobile: +348574125</p>
+          <p text-wrap>Address: No 22 Sanfransisco</p>
+          <p>Distance: 1.5Km</p>
+          <p>Brand: Shell</p>
+          <p>Weight: 12.5Kg</p>
+          <p>GasPrice: 40$</p>
+          <p>Transport: 5$</p>
+          <p>Handling: 2$</p>
+          <p>Total:47$</p>
+          <ion-button class="new-background-color" item-end size="small" (click) = "orderSend()" expand="block">Order</ion-button>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card >    
+          <ion-card-content >
+            <ion-card-subtitle>Name: Smith Gas</ion-card-subtitle>
+            <p>Mobile: +348574155</p>
+            <p text-wrap>Address: No 22 Sanfransisco</p>
+            <p>Distance: 1.5Km</p>
+            <p>Brand: Shell</p>
+            <p>Weight: 12.5Kg</p>
+            <p>GasPrice: 40$</p>
+            <p>Transport: 5$</p>
+            <p>Handling: 2$</p>
+            <p>Total:47$</p>
+            <ion-button class="new-background-color" item-end size="small" (click) = "orderSend()" expand="block">Order</ion-button>
+          </ion-card-content>
+        </ion-card>
+
+</ion-content>

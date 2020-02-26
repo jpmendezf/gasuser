@@ -1,0 +1,7 @@
+{
+  "name": "GasUser",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

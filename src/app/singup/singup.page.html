@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+      <ion-buttons >
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <img alt="logo" style="margin-left: 20px" height="60" src="assets/images/logo.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+
+        <div padding>
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="Name" placeholder="Name"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-input type="text" [(ngModel)]="Address1" placeholder="No"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-input type="text" [(ngModel)]="Address2" placeholder="Street"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-input type="text" [(ngModel)]="Address3" placeholder="State"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="mobile" placeholder="Mobile"></ion-input>
+          </ion-item>
+
+  
+        </div>
+  
+        <div padding>
+          <ion-button class="btn" size="medium" (click) = "saveData()" expand="block">SAVE</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
